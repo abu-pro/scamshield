@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ScamShield — Paste any message. Know in seconds if it's a trap.</title>
+<meta name="description" content="ScamShield checks suspicious texts, emails and links for the red flags of fraud — risk score, plain-English explanations and an action plan. Free, worldwide, no sign-up." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="badge">🛡️ HackGlobal 2026 · Track: Civic &amp; Real-World Impact</div>
+    <h1>Scam<span>Shield</span></h1>
+    <p class="tagline">Paste any message. Know in seconds if it's a <strong>trap</strong>.</p>
+    <p class="sub">Consumers worldwide lost <strong>over $1 trillion to scams in a single year</strong> (Global Anti-Scam Alliance). Most scams are stopped by one thing: a 30-second check before you act. This is that check — free, in plain English, for every country.</p>
+  </div>
+</header>
+
+<main class="wrap layout">
+  <section class="card analyzer">
+    <h2>Check a message, email or link</h2>
+    <textarea id="input" rows="7" placeholder="Paste the suspicious text here — an SMS, a WhatsApp message, an email, or just a link…"></textarea>
+    <div class="row">
+      <button id="analyze-btn" class="cta">🛡️ Check it now</button>
+      <button id="clear-btn" class="cta ghost" type="button">Clear</button>
+    </div>
+    <p class="privacy">Nothing is stored and nothing leaves your device unless you use the hosted demo — the checker runs on transparent rules, not black-box AI.</p>
+    <div class="samples">
+      <span>Try a real-style sample:</span>
+      <div id="sample-chips" class="chips"></div>
+    </div>
+  </section>
+
+  <section id="results" hidden>
+    <div class="card verdict-card">
+      <div class="score-wrap">
+        <div id="ring" class="ring"><div class="ring-inner"><span id="score">0</span><small>/ 100</small></div></div>
+        <div class="verdict-text">
+          <div id="level" class="level-pill"></div>
+          <h2 id="verdict"></h2>
+          <p id="category" class="category"></p>
+        </div>
+      </div>
+      <div id="safe" class="safe"></div>
+    </div>
+
+    <div class="card">
+      <h2>🚩 Red flags found</h2>
+      <ul id="flags" class="flags"></ul>
+      <div id="linkbox"></div>
+    </div>
+
+    <div class="card plan-card">
+      <h2>✅ What to do now</h2>
+      <ol id="actions"></ol>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>How ScamShield works</h2>
+    <div class="steps">
+      <div><strong>1 · You paste it</strong><p>Any text — SMS, chat, email — or a bare link. No account, no upload of personal data.</p></div>
+      <div><strong>2 · Shield reads like a fraud officer</strong><p>Thirteen red-flag families — urgency, credential asks, fake prizes, look-alike domains, untraceable payments — are checked one by one, and every link is taken apart piece by piece.</p></div>
+      <div><strong>3 · You get a score and a plan</strong><p>A 0–100 risk score, each flag explained in plain English, and the exact steps to stay safe — or to recover if you already acted.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>The red-flag library — learn the patterns once, spot them forever</h2>
+    <div class="library">
+      <div><strong>⏰ The rush</strong><p>"Within 24 hours", "final warning", "act now". Pressure exists to stop you checking.</p></div>
+      <div><strong>🔑 The ask</strong><p>Passwords, PINs, OTPs. No real organisation asks. Ever. The ask is the scam.</p></div>
+      <div><strong>🎁 The prize</strong><p>You won a lottery you never entered — just pay a small fee first. The fee is the whole business.</p></div>
+      <div><strong>🔗 The look-alike</strong><p>paypaI-secure.xyz is not PayPal. One different letter, a strange ending — your savings gone.</p></div>
+      <div><strong>💸 The payment</strong><p>Gift cards, crypto, wire transfers. Untraceable on purpose, unrecoverable by design.</p></div>
+      <div><strong>🤫 The secret</strong><p>"Don't tell anyone, stay on the line." Isolation is a weapon — a second opinion kills most scams.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>ScamShield</strong> — built by Abu Sufyan, BS Software Engineering, Riphah International University, Sahiwal, Pakistan · For HackGlobal 2026 (Polaris School of Technology × Vultr).</p>
+    <p class="fine">Free forever, for everyone, everywhere. ScamShield explains risk; it cannot guarantee safety — when in doubt, verify through the official app or website you found yourself.</p>
+  </div>
+</footer>
+
+<script src="shield.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
